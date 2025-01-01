@@ -51,7 +51,7 @@ func download_texture():
     material.uv1_world_triplanar
 
     print("Saving textures")
-    ResourceSaver.save(material, materials_dir + "/" + requested_texture + ".res")
+    ResourceSaver.save(material, materials_dir + "/" + requested_texture + "_" + texture_size +".res")
 
 
 func get_texture(format: String, type: String) -> Texture:
